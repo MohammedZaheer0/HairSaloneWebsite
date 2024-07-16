@@ -75,13 +75,10 @@
     gap: 1rem;
     cursor: pointer;
 }
-.hambuger{
+.hamburger, .crossmark {
+    visibility: hidden;
     color: #fff;
     font-size: 1.5rem;
-    display: none;
-}
-.crossmark{
-    display: none;
 }
 
 
@@ -138,7 +135,7 @@
         width: 60%;
     }
     .hamburger, .crossmark{
-        display: block;
+        visibility: visible;
         color: #fff;
         position: absolute;
         top: -80px;
@@ -148,4 +145,10 @@
     #menuList{
         transition: all 0.5s;
     }
+}
+
+
+
+@media only screen and (min-width: 426px) {
+   
 }
